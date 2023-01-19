@@ -38,24 +38,26 @@
       </style>
 
     
+
 <script>
-  (() => {
-      window.EXP_PLATFORM_ORIGIN = "*";
-      const s = document.createElement("script");
-      s.async = true;
-      s.src = "https://unpkg.com/ab-designer@0.6.0/dist/ab-designer.umd.production.min.js";
-      document.head.appendChild(s);
-      return
-  })();
-  </script>
-  <script>
   window.ENVIRONMENT_CONFIG = {
-      apiKey: '3200037ff86916ad22646ac28e59201639559e2f921f2f3c1c9072d71dda1406',
+    apiKey: '3200037ff86916ad22646ac28e59201639559e2f921f2f3c1c9072d71dda1406',
   }
-  </script>
-  </script>
-  <script src="https://res.cloudinary.com/dytc8qjjz/raw/upload/v1673504662/script_rd2tiq.js"></script>
-  
+</script>
+<script>
+(() => {
+    window.EXP_PLATFORM_ORIGIN = "*";
+    const s = document.createElement("script");
+    s.async = true;
+    s.src = "https://unpkg.com/ab-designer@0.6.0/dist/ab-designer.umd.production.min.js";
+    document.head.appendChild(s);
+    window.parent.postMessage({event:'APIKEY',key: window.ENVIRONMENT_CONFIG.apiKey},'*')
+    return
+})();
+</script>
+</script>
+<script src="https://res.cloudinary.com/dytc8qjjz/raw/upload/v1673967677/script_abtesting_qfmsqs.js"></script>
+
 
   </head>
   
